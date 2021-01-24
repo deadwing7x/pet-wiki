@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 import { Context } from "aws-lambda";
 
-export async function handler(event: any, context: Context) {
+exports.handler =  async function(event: any, context: Context) {
   try {
     const baseUrl = "https://api.thecatapi.com/v1";
     const apiUrl = `${baseUrl}/breeds`;
