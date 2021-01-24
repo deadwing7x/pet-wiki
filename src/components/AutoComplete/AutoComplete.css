@@ -1,0 +1,73 @@
+.breed-search {
+  position: relative;
+  width: 310px;
+  border-radius: 24px;
+  margin-top: 7rem;
+  height: 50px;
+  font-size: 18px;
+}
+
+.breed-search::placeholder {
+  padding-left: 10px;
+  font-family: "Montserrat";
+}
+
+.breed-search:active {
+  border-radius: 24px;
+}
+
+.no-options {
+  color: white;
+}
+
+ul.options {
+  display: block;
+  list-style: none;
+  width: 330px;
+  transition: width 0.3s;
+  position: relative;
+  right: 2rem;
+  z-index: 100;
+  height: 220px;
+}
+
+ul.options li {
+  display: block;
+  background: white;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 24px;
+}
+ul.options li:hover {
+  font-weight: bold;
+  color: #00b4cc;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+ul.options li.option-active {
+  background: whitesmoke;
+  font-size: 20px;
+  color: #00b4cc;
+}
+
+.fa-search {
+  margin-top: 130px;
+  position: relative;
+  right: 35px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.fa-search:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#spinner {
+  position: relative;
+  top: 121px;
+  right: 40px;
+}

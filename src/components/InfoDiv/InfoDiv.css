@@ -1,0 +1,83 @@
+.info-div {
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  background-color: #e3e1dc;
+  width: 1200px;
+  margin-bottom: 3rem;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.searched-breeds {
+  margin-top: 0 !important;
+  float: left;
+  margin-left: 5rem;
+  padding-top: 2.5rem;
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-variant: small-caps;
+  font-weight: 500;
+}
+
+.breed-count-info {
+  margin-left: 5rem;
+  margin-top: 0 !important;
+  padding-top: 6rem;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  width: 350px;
+}
+
+.loading {
+  margin-left: 6rem;
+  font-size: 26px;
+  font-weight: 500;
+  font-family: 'Montserrat';
+}
+
+#breedDiv {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  text-align: center;
+}
+
+.breed-image.col-md-4 {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 24px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 180px;
+  width: 180px;
+}
+
+.breed-image:hover {
+  transform: scale(1.1);
+}
+
+.see-more {
+  cursor: pointer;
+  float: right;
+  position: relative;
+  margin-right: 5rem;
+  margin-top: 2rem;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(to right, orange, orange 50%, black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  transition: background-position 700ms ease;
+  background-position: 100%;
+}
+
+.see-more:hover {
+  background-position: 0 100%;
+  cursor: pointer;
+}

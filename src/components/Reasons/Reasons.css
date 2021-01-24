@@ -1,0 +1,44 @@
+#reasonDiv {
+  margin-top: 2rem;
+}
+
+.reasons-question {
+  color: #daa520;
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Montserrat";
+  margin-left: 21rem;
+  width: 380px;
+}
+
+.reasons-answer {
+  margin-left: 21rem;
+  margin-top: 2rem;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  width: 420px;
+}
+
+.firstCat {
+  width: 170px;
+  height: 250px;
+  position: relative;
+  right: 420px;
+}
+
+.secondCat {
+  width: 220px;
+  height: 120px;
+  position: relative;
+  top: -140px;
+  right: 20px;
+}
+
+.thirdCat {
+  width: 220px;
+  height: 350px;
+  position: relative;
+  top: -140px;
+  right: 10px;
+}
