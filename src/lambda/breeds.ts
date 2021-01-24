@@ -1,5 +1,5 @@
-import fetch from "node-fetch";
 import { Context } from "aws-lambda";
+const fetch = require("node-fetch");
 
 exports.handler =  async function(event: any, context: Context) {
   try {
