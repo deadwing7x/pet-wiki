@@ -1,5 +1,5 @@
 import { Context } from "aws-lambda";
-const fetch = require("node-fetch");
+import axios from 'axios';
 
 exports.handler =  async function(event: any, context: Context) {
   try {
@@ -7,22 +7,16 @@ exports.handler =  async function(event: any, context: Context) {
     const apiUrl = `${baseUrl}/breeds`;
     const apiKey = "fee5f4b7-b780-4a47-8ce9-2b491704350f";
 
-    const response = await fetch(apiUrl, {
+    const response = await axios(apiUrl, {
       method: "GET",
       headers: {
         "x-api-key": apiKey,
       },
     });
 
-    if (!response.ok) {
-      return { statusCode: response.status, body: response.statusText };
-    }
-
-    const data = await response.json();
-
     return {
       statusCode: 200,
-      body: JSON.stringify({ breeds: data }),
+      body: JSON.stringify({ breeds: response.data }),
     };
   } catch (err) {
     console.log(err); // output to netlify function log
