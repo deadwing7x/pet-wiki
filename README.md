@@ -2,17 +2,11 @@
 
 ## Get to know more about those amazing furry creatures that we all love.
 
+## This project is built using React with TypeScript for the frontend and Netlify Lambda Functions (Serverless) which serves as the backend for the application.
+
 ## **How to run:**
 
-### Fire up the Server
-
-1. Navigate to the server folder and run the command 'npm start' to start the server.
-
-### Load the Client
-
-1. Navigate to the client folder and run the command 'npm start' to load the client on the browser.
-
-### This project is built using React with TypeScript for the frontend and Node JS with Express as the backend server.
+1. Open the folder in any IDE and fire up the command "**npm run start**" which starts the app along side the netlify lambda functions.
 
 #### Every information shown in this project regarding the pet animals are courtesy of these two amazing apis.
 
