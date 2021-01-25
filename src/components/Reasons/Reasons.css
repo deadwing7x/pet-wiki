@@ -42,3 +42,14 @@
   top: -140px;
   right: 10px;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .reasons-question {
+    margin-left: 14rem;
+  }
+
+  .firstCat {
+    right: -670px;
+    top: -355px;
+  }
+}

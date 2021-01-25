@@ -7,3 +7,8 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .logo {
+    margin-left: 2rem;
+  }
+}
