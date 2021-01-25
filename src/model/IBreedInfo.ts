@@ -1,7 +1,10 @@
+import { IImage } from "./IImage";
+
 export interface IBreedInfo {
   id: string;
   name: string;
-  temparament: string;
+  description: string;
+  temperament: string;
   life_span: string;
   origin: string;
   image: IImage;
@@ -13,11 +16,6 @@ export interface IBreedInfo {
   health_issues: number;
   social_needs: number;
   stranger_friendly: number;
-}
-
-export interface IImage {
-  height: number;
-  width: number;
-  url: string;
-  id: string;
+  wikipedia_url: string;
+  dog_friendly: string;
 }
