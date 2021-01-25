@@ -2,7 +2,7 @@
 
 ## Get to know more about those amazing furry creatures that we all love.
 
-## This project is built using React with TypeScript for the frontend and Netlify Lambda Functions (Serverless) which serves as the backend for the application.
+### This project is built using React with TypeScript for the frontend and Netlify Lambda Functions (Serverless) which serves as the backend for the application.
 
 ## **How to run:**
 
