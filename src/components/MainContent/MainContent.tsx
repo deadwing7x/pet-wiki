@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import Hero from "../Hero/Hero";
@@ -19,6 +20,8 @@ const MainContent: React.FC<{}> = () => {
 
     let breedsStorage = sessionStorage.getItem("breeds");
 
+    const names: string[] = [];
+
     if (breedsStorage) {
       let random: IBreedInfo[] = [];
       const breeds: IBreedInfo[] = JSON.parse(breedsStorage);
@@ -32,6 +35,13 @@ const MainContent: React.FC<{}> = () => {
           random.push(breeds[index + 1]);
         }
       }
+
+      breeds.forEach((breed: any) => {
+        names.push(breed.name);
+      });
+
+      setBreedNames(names);
+
       setRandomBreeds(random);
 
       setIsLoading(false);
@@ -53,20 +63,19 @@ const MainContent: React.FC<{}> = () => {
                 random.push(breeds[index + 1]);
               }
             }
+
+            breeds.forEach((breed: any) => {
+              names.push(breed.name);
+            });
+
+            setBreedNames(names);
+
             setRandomBreeds(random);
 
             setIsLoading(false);
           }
         });
     }
-
-    const names: string[] = [];
-
-    breeds.forEach((breed) => {
-      names.push(breed.name);
-    });
-
-    setBreedNames(names);
   }, []);
 
   infoDivProps = {

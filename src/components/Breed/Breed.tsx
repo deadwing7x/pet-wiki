@@ -23,6 +23,8 @@ const Breed: React.FC<{}> = () => {
           breeds.filter((item: IBreedInfo) => item.name === nameOfBreed)[0]
         );
       });
+
+    console.log(breed);
   }, []);
 
   return <></>;
