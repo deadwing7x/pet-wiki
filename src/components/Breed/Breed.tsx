@@ -2,12 +2,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { useRouteMatch } from "react-router-dom";
-import { IBreedInfo } from "../../model/IBreedInfo";
+import { ICatBreedInfo } from "../../model/IBreedInfo";
 import { IImage } from "../../model/IImage";
 import "./Breed.css";
 
 const Breed: React.FC<{}> = () => {
-  const [breed, setBreed] = useState<IBreedInfo>();
+  const [breed, setBreed] = useState<ICatBreedInfo>();
   const [images, setImages] = useState<IImage[]>();
   const getBreeddUrl = "/.netlify/functions/breeds";
   const getImagesUrl = "/.netlify/functions/get-images";
@@ -39,9 +39,9 @@ const Breed: React.FC<{}> = () => {
       .then((response) => response.json())
       .then(({ breeds }) => {
         if (breeds) {
-          const breedList: IBreedInfo[] = breeds;
+          const breedList: ICatBreedInfo[] = breeds;
 
-          const searchedBreed: IBreedInfo = breedList.filter(
+          const searchedBreed: ICatBreedInfo = breedList.filter(
             (breed) => breed.name === nameOfBreed
           )[0];
 
@@ -118,7 +118,7 @@ const Breed: React.FC<{}> = () => {
         <div className="row col-md-12" id="other-images">
           {images?.map((image) => {
             return (
-              <div className="col-md-3">
+              <div className="col-md-3" key={image.id}>
                 <img className="other-photos" src={image.url} alt={image.id} />
               </div>
             );

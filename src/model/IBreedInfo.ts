@@ -1,6 +1,6 @@
 import { IImage } from "./IImage";
 
-export interface IBreedInfo {
+export interface ICatBreedInfo {
   id: string;
   name: string;
   description: string;

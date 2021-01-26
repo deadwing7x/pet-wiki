@@ -14,10 +14,9 @@ exports.handler = async function (event: any, context: Context) {
       },
       params: {
         size: event.queryStringParameters.size,
-        order: "RANDOM",
         limit: 8,
         page: parseInt(event.queryStringParameters.page),
-        breed_id: event.queryStringParameters.id,
+        breed_id: event.queryStringParameters.breed_id,
       },
     });
 

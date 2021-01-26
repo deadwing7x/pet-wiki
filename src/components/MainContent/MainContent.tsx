@@ -3,13 +3,13 @@
 import React, { useEffect, useState } from "react";
 import Hero from "../Hero/Hero";
 import InfoDiv from "../InfoDiv/InfoDiv";
-import { IBreedInfo } from "../../model/IBreedInfo";
+import { ICatBreedInfo } from "../../model/IBreedInfo";
 import { IInfoDivProps } from "../../model/IInfoDivProps";
 import { IHeroProps } from "../../model/IHeroProps";
 
 const MainContent: React.FC<{}> = () => {
-  const [breeds, setBreeds] = useState<IBreedInfo[]>([]);
-  const [randomBreeds, setRandomBreeds] = useState<IBreedInfo[]>([]);
+  const [breeds, setBreeds] = useState<ICatBreedInfo[]>([]);
+  const [randomBreeds, setRandomBreeds] = useState<ICatBreedInfo[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [breedNames, setBreedNames] = useState<string[]>([]);
   let infoDivProps: IInfoDivProps;
@@ -23,8 +23,8 @@ const MainContent: React.FC<{}> = () => {
     const names: string[] = [];
 
     if (breedsStorage) {
-      let random: IBreedInfo[] = [];
-      const breeds: IBreedInfo[] = JSON.parse(breedsStorage);
+      let random: ICatBreedInfo[] = [];
+      const breeds: ICatBreedInfo[] = JSON.parse(breedsStorage);
 
       for (let i = 0; i < 5; i++) {
         let index = Math.floor(Math.random() * 16);
@@ -52,7 +52,7 @@ const MainContent: React.FC<{}> = () => {
           if (breeds) {
             setBreeds(breeds);
             sessionStorage.setItem("breeds", JSON.stringify(breeds));
-            let random: IBreedInfo[] = [];
+            let random: ICatBreedInfo[] = [];
 
             for (let i = 0; i < 4; i++) {
               let index = Math.floor(Math.random() * 16);
