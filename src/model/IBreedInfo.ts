@@ -19,3 +19,14 @@ export interface ICatBreedInfo {
   wikipedia_url: string;
   dog_friendly: string;
 }
+
+export interface IDogBreedInfo {
+  bred_for: string;
+  breed_group: string;
+  id: number;
+  image: IImage;
+  life_span: string;
+  name: string;
+  origin: string;
+  temperament: string;
+}

@@ -1,6 +1,9 @@
-import { ICatBreedInfo } from "./IBreedInfo";
+import { ICatBreedInfo, IDogBreedInfo } from "./IBreedInfo";
+import { IPet } from "./IPet";
 
 export interface IInfoDivProps {
-    randomBreeds: ICatBreedInfo[];
-    isLoading: boolean;
+  randomDogBreeds: IDogBreedInfo[];
+  randomCatBreeds: ICatBreedInfo[];
+  isLoading: boolean;
+  pet: IPet;
 }

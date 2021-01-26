@@ -1,0 +1,45 @@
+.dog-wiki,
+.cat-wiki {
+  text-align: center;
+}
+
+.gif-image {
+  height: 400px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#cardDiv {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.card {
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid black;
+  box-shadow: 15px 15px 7.5px #949494;
+}
+
+.nav-link {
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 600;
+  background: linear-gradient(to right, orange, orange 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  transition: background-position 900ms ease;
+  background-position: 100%;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-position: 0 100%;
+  cursor: pointer;
+}

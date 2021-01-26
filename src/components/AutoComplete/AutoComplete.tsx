@@ -19,6 +19,9 @@ const AutoComplete: React.FC<IAutoCompleteProps> = (
     if (redirect) {
       history.push({
         pathname: `/breed/:${userInput}`,
+        state: {
+          pet: props.pet
+        },
       });
     }
   });

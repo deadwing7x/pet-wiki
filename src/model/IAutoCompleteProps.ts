@@ -1,3 +1,6 @@
+import { IPet } from "./IPet";
+
 export interface IAutoCompleteProps {
-    breedNames: string[];
+  breedNames: string[];
+  pet: IPet;
 }

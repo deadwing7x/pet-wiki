@@ -1,14 +1,28 @@
-.logo {
-  margin-left: 8rem;
-  margin-top: 1rem;
+.app-desc {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 2rem;
+  border: 5px solid black;
+  box-shadow: 20px 20px 10px #949494;
 }
 
-.pet-changer {
-  cursor: pointer;
+.app-name {
+  font-size: 60px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+  margin-top: 2rem;
+  color: #da8bda;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1250px) {
-  .logo {
-    margin-left: 2rem;
-  }
+.app-info {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.home-link:hover {
+  text-decoration: none;
 }
