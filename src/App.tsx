@@ -41,14 +41,14 @@ const App: React.FC<{}> = () => {
               <p className="app-name">Fine Furlly</p>
             </a>
             <MainContent {...cat} />
-            <Reasons />
+            <Reasons {...cat} />
           </Route>
           <Route exact path="/dog-wiki">
             <a className="home-link" href="/">
               <p className="app-name">Fine Furlly</p>
             </a>
             <MainContent {...dog} />
-            <Reasons />
+            <Reasons {...dog} />
           </Route>
           <Route path="/breed" component={Breed}>
             <a className="home-link" href="/">

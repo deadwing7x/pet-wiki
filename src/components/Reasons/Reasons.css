@@ -1,5 +1,6 @@
 #reasonDiv {
   margin-top: 2rem;
+  height: 450px;
 }
 
 .reasons-question {
@@ -7,12 +8,12 @@
   font-size: 40px;
   font-weight: 800;
   font-family: "Montserrat";
-  margin-left: 21rem;
+  margin-left: 20rem;
   width: 380px;
 }
 
 .reasons-answer {
-  margin-left: 21rem;
+  margin-left: 20rem;
   margin-top: 2rem;
   font-size: 18px;
   font-weight: 500;
@@ -43,13 +44,29 @@
   right: 10px;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1250px) {
-  .reasons-question {
-    margin-left: 14rem;
-  }
+.firstDog {
+  width: 270px;
+  height: 200px;
+  position: relative;
+  right: 225px;
+  top: -140px;
+  border-radius: 24px;
+}
 
-  .firstCat {
-    right: -670px;
-    top: -355px;
-  }
+.secondDog {
+  width: 250px;
+  height: 140px;
+  position: relative;
+  top: 80px;
+  left: 45px;
+  border-radius: 24px;
+}
+
+.thirdDog {
+  width: 300px;
+  height: 360px;
+  position: relative;
+  top: -344px;
+  left: 1070px;
+  border-radius: 24px;
 }
