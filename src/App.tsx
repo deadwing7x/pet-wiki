@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import MainContent from "./components/MainContent/MainContent";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 import Breed from "./components/Breed/Breed";
+import ListBreeds from "./components/ListBreeds/ListBreeds";
 
 const App: React.FC<{}> = () => {
   return (
@@ -27,6 +28,9 @@ const App: React.FC<{}> = () => {
           </Route>
           <Route path="/breed" component={Breed}>
             <Breed />
+          </Route>
+          <Route path="/list-breeds" component={ListBreeds}>
+            <ListBreeds />
           </Route>
           <Footer />
         </div>

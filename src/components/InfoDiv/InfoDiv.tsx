@@ -29,9 +29,14 @@ const InfoDiv: React.FC<IInfoDivProps> = (props: IInfoDivProps) => {
           </div>
         )}
       </div>
-      <div className="see-more">
+      <a
+        className="see-more"
+        href="/list-breeds"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         SEE MORE <i className="fa fa-arrow-right"></i>
-      </div>
+      </a>
     </div>
   );
 };
