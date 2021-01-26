@@ -35,21 +35,35 @@ const Breed: React.FC<{}> = () => {
   };
 
   useEffect(() => {
-    fetch(getBreeddUrl)
-      .then((response) => response.json())
-      .then(({ breeds }) => {
-        if (breeds) {
-          const breedList: ICatBreedInfo[] = breeds;
+    const breedsStorage: any = sessionStorage.getItem("breeds");
 
-          const searchedBreed: ICatBreedInfo = breedList.filter(
-            (breed) => breed.name === nameOfBreed
-          )[0];
+    if (breedsStorage) {
+      const breeds: ICatBreedInfo[] = JSON.parse(breedsStorage);
 
-          setBreed(searchedBreed);
+      const searchedBreed: ICatBreedInfo = breeds.filter(
+        (breed) => breed.name === nameOfBreed
+      )[0];
 
-          getRandomImages(searchedBreed.id);
-        }
-      });
+      setBreed(searchedBreed);
+    } else {
+      fetch(getBreeddUrl)
+        .then((response) => response.json())
+        .then(({ breeds }) => {
+          if (breeds) {
+            const breedList: ICatBreedInfo[] = breeds;
+
+            sessionStorage.setItem("breeds", JSON.stringify(breedList));
+
+            const searchedBreed: ICatBreedInfo = breedList.filter(
+              (breed) => breed.name === nameOfBreed
+            )[0];
+
+            setBreed(searchedBreed);
+
+            getRandomImages(searchedBreed.id);
+          }
+        });
+    }
   }, []);
 
   return (
