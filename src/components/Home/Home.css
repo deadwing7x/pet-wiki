@@ -21,7 +21,12 @@
   align-items: center;
   border-radius: 15px;
   border: 1px solid black;
+  transition: all 0.2s ease-in-out;
   box-shadow: 15px 15px 7.5px #949494;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .nav-link {
