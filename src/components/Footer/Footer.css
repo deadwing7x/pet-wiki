@@ -13,10 +13,16 @@
   color: white;
   font-size: 20px;
   font-weight: 400;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   padding-top: 19px;
 }
 
 .fa-heart {
   color: red;
+}
+
+@media screen and (max-width: 450px) and (min-width: 400px) {
+  .footer-div {
+    width: 100%;
+  }
 }

@@ -29,8 +29,8 @@ const Reasons: React.FC<IPet> = (props: IPet) => {
         ) : (
           <>
             <img src={DogImage2} alt="Dog-2" className="secondDog" />
-            <img src={DogImage1} alt="Dog-3" className="firstDog" />
-            <img src={DogImage3} alt="Dog-1" className="thirdDog" />
+            <img src={DogImage1} alt="Dog-1" className="firstDog" />
+            <img src={DogImage3} alt="Dog-3" className="thirdDog" />
           </>
         )}
       </div>

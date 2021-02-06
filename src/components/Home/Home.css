@@ -48,3 +48,55 @@
   background-position: 0 100%;
   cursor: pointer;
 }
+
+@media screen and (max-width: 450px) and (min-width: 400px) {
+  #cardDiv {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .card {
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid black;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 15px 15px 7.5px #949494;
+  }
+
+  .dog-wiki {
+    padding-bottom: 2rem;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .gif-image {
+    height: 250px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .nav-link {
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 600;
+    background: linear-gradient(to right, orange, orange 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    transition: background-position 900ms ease;
+    background-position: 100%;
+    text-decoration: none;
+  }
+
+  .nav-link:hover {
+    background-position: 0 100%;
+    cursor: pointer;
+  }
+}
