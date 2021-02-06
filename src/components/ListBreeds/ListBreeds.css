@@ -71,3 +71,41 @@
     box-shadow: 5px 5px 2px #949494;
   }
 }
+
+@media screen and (max-width: 395px) and (min-width: 300px) {
+  .list-breeds-text {
+    position: relative;
+    left: 2rem;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    padding-top: 1rem;
+  }
+
+  #list-breeds {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #breed-image-div {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  #breed-info-div {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid black;
+  }
+
+  .breed-name {
+    font-size: 25px;
+    font-weight: 700;
+    width: max-content;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 2px #949494;
+  }
+}

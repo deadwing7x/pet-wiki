@@ -53,3 +53,30 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 395px) and (min-width: 300px) {
+  .app-desc {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    border: 5px solid black;
+    box-shadow: none;
+  }
+
+  .app-name {
+    font-size: 30px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    margin-top: 1rem;
+    color: #da8bda;
+  }
+
+  .app-info {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+  }
+}

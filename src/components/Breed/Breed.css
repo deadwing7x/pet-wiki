@@ -109,3 +109,40 @@
     margin-bottom: 30px;
   }
 }
+
+@media screen and (max-width: 395px) and (min-width: 300px) {
+  #breedPicDiv {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .breedImage {
+    width: 250px;
+    height: 250px;
+    border-radius: 24px;
+    box-shadow: 15px 15px 5px #949494;
+  }
+
+  #breedDiv {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-top: 2rem;
+    font-family: "Montserrat";
+  }
+
+  #breedInfoDiv {
+    padding-left: 1.5rem;
+    text-align: left;
+  }
+
+  .other-photos {
+    width: 250px;
+    height: 250px;
+    margin-left: -3.5rem;
+    margin-right: 1rem;
+    border-radius: 24px;
+    margin-bottom: 20px;
+  }
+}

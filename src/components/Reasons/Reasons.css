@@ -153,3 +153,85 @@
     left: 4.4rem;
   }
 }
+
+@media screen and (max-width: 395px) and (min-width: 300px) {
+  #reasonDiv {
+    margin-top: 0 !important;
+    height: max-content;
+    align-items: center;
+  }
+
+  .row,
+  .col-md-12 {
+    margin-right: 0 !important;
+  }
+
+  .reasons-question {
+    color: #daa520;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: "Montserrat";
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  .reasons-answer {
+    margin-top: 0.5rem;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    margin-left: 2rem;
+  }
+
+  .firstDog {
+    width: 250px;
+    height: 200px;
+    margin-left: 16rem;
+    border-radius: 24px;
+  }
+
+  .secondDog {
+    width: 250px;
+    height: 170px;
+    margin-left: -1rem;
+    position: relative;
+    top: 16rem;
+    border-radius: 24px;
+  }
+
+  .thirdDog {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 85px;
+    left: 2rem;
+    margin-bottom: 7rem;
+    bottom: 20px;
+    border-radius: 24px;
+  }
+
+  .firstCat {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    left: 2.5rem;
+    top: 70px;
+    margin-bottom: 7rem;
+  }
+
+  .secondCat {
+    width: 250px;
+    height: 160px;
+    position: relative;
+    top: 10px;
+    left: 2.5rem;
+  }
+
+  .thirdCat {
+    width: 250px;
+    height: 350px;
+    position: relative;
+    top: 40px;
+    left: 2.5rem;
+  }
+}
