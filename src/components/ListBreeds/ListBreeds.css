@@ -75,7 +75,7 @@
 @media screen and (max-width: 395px) and (min-width: 300px) {
   .list-breeds-text {
     position: relative;
-    left: 2rem;
+    left: 1rem;
     font-size: 35px;
     font-weight: 700;
     font-family: "Montserrat";
@@ -85,8 +85,6 @@
   #list-breeds {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-right: 0;
     padding-left: 0;
     padding-right: 0;
   }
@@ -107,5 +105,11 @@
     width: max-content;
     margin-bottom: 30px;
     box-shadow: 5px 5px 2px #949494;
+  }
+
+  .breed-description {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
   }
 }
