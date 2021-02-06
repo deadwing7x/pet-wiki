@@ -49,6 +49,11 @@
   cursor: pointer;
 }
 
+.loading-cards {
+  text-align: center;
+  font-size: 30px;
+}
+
 @media screen and (max-width: 450px) and (min-width: 400px) {
   #cardDiv {
     margin-left: auto;
