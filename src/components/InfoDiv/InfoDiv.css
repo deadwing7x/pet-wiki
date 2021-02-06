@@ -210,3 +210,65 @@
     transform: scale(1.05);
   }
 }
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .info-div {
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    background-color: #e3e1dc;
+    width: 700px;
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  .searched-breeds {
+    margin-top: 0 !important;
+    margin-left: 3.5rem;
+    padding-top: 2rem;
+    font-size: 21px;
+    font-family: "Montserrat";
+    font-variant: small-caps;
+    font-weight: 500;
+  }
+
+  .breed-count-info {
+    margin-top: 0 !important;
+    padding-top: 5rem;
+    position: relative;
+    left: -25px;
+    font-size: 28px;
+    width: 400px;
+    font-weight: 700;
+    font-family: "Montserrat";
+  }
+
+  .see-more {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #breedDiv {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+
+  .breed-image.col-md-4 {
+    margin-left: 1.25rem;
+    margin-right: 0.5rem;
+    border-radius: 24px;
+    height: 200px;
+    width: 350px;
+    margin-bottom: 1rem;
+  }
+
+  .breed-image:hover {
+    transform: scale(1.05);
+  }
+}

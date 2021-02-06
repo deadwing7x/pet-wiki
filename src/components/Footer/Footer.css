@@ -23,12 +23,45 @@
 
 @media screen and (max-width: 450px) and (min-width: 400px) {
   .footer-div {
-    width: 100%;
+    width: 90%;
+    height: 80px;
+  }
+
+  .copyright-text {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    padding-top: 19px;
   }
 }
 
 @media screen and (max-width: 395px) and (min-width: 300px) {
   .footer-div {
-    width: 100%;
+    width: 90%;
+    height: 70px;
+  }
+
+  .copyright-text {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .footer-div {
+    width: 90%;
+    height: 90px;
+  }
+
+  .copyright-text {
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    padding-top: 16px;
   }
 }
