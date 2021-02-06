@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fine Furlly",
+  "name": "A wiki for your furry friends",
   "icons": [
     {
       "src": "favicon.ico",
