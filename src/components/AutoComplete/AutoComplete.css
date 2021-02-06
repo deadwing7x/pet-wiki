@@ -144,4 +144,8 @@ ul.options li.option-active {
     cursor: pointer;
     opacity: 0.5;
   }
+
+  ul.options {
+    right: 3.5rem;
+  }
 }

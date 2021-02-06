@@ -113,3 +113,26 @@
     margin-bottom: 15px;
   }
 }
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .list-breeds-text {
+    left: 65px;
+  }
+
+  .breed-name {
+    font-size: 38px;
+    font-weight: 700;
+    width: max-content;
+    margin-left: 2rem;
+    padding-right: 5px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 2px #949494;
+  }
+
+  .breed-description {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 2rem;
+    margin-bottom: 15px;
+  }
+}
